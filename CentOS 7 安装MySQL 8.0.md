@@ -1,4 +1,4 @@
-# CentOS 7 安装MySQL 8.0并开启远程访问
+# CentOS 7安装MySQL 8.0并开启远程访问
 ## 1.检查MariaDB
 
 检查是否已安装MariaDB并删除
@@ -80,15 +80,15 @@ mysql -u root -p
 修改MySQL密码
 
 ```mysql
-alter USER 'root'@'localhost' IDENTIFIED BY 'Zhy1026+++';
+alter USER 'root'@'localhost' IDENTIFIED BY 'PASSWORD';
 ```
 
 开启远程访问（适用于MySQL8.0以后版本）
 
 ```mysql
-CREATE USER 'root'@'%' IDENTIFIED BY 'Zhy1026+++'; 
+CREATE USER 'root'@'%' IDENTIFIED BY 'PASSWORD'; 
 GRANT ALL ON *.* TO 'root'@'%'; 
-ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'Zhy1026+++';
+ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'PASSWORD';
 FLUSH PRIVILEGES;
 ```
 
