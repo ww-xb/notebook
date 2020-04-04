@@ -2,9 +2,9 @@
 
 1.下载frp
 
-下载地址：[https://github.com/fatedier/frp/releases](https://link.jianshu.com?t=https%3A%2F%2Fgithub.com%2Ffatedier%2Ffrp%2Freleases)
+下载地址：[https://github.com/fatedier/frp/releases](https://github.com/fatedier/frp/releases)
 
-中文文档：[https://github.com/fatedier/frp/blob/master/doc/quick_start_zh.md](https://link.jianshu.com?t=https%3A%2F%2Fgithub.com%2Ffatedier%2Ffrp%2Fblob%2Fmaster%2Fdoc%2Fquick_start_zh.md)
+中文文档：[https://github.com/fatedier/frp/blob/master/doc/quick_start_zh.md](https://github.com/fatedier/frp/blob/master/doc/quick_start_zh.md)
 
 2.解压
 

@@ -14,8 +14,8 @@ wget https://mirrors.huaweicloud.com/apache/tomcat/tomcat-9/v9.0.31/bin/apache-t
 ```bash
 tar -zxvf jdk-13_linux-x64_bin.tar.gz
 tar -zxvf apache-tomcat-9.0.31.tar.gz
-mv jdk-13 /usr/local/
-mv apache-tomcat-9.0.31 /usr/local/
+mv jdk-13 /opt/
+mv apache-tomcat-9.0.31 /opt/
 ```
 
 3.配置环境变量
@@ -27,10 +27,10 @@ vim /etc/profile
 将以下内容填入文本最后
 
 ```bash
-JAVA_HOME=/usr/local/jdk-13
-PATH=/usr/local/jdk-13/bin:$PATH
-CLASSPATH=.:/usr/local/jdk-13/lib/dt.jar:/usr/local/jdk-13/lib/tools.jar
-CATALINA_HOME=/usr/local/apache-tomcat-9.0.31
+JAVA_HOME=/opt/jdk-13
+PATH=/opt/jdk-13/bin:/opt/apache-tomcat-9.0.31/bin:$PATH
+CLASSPATH=.:/opt/jdk-13/lib/dt.jar:/opt/jdk-13/lib/tools.jar
+CATALINA_HOME=/opt/apache-tomcat-9.0.31
 export JAVA_HOME CLASSPATH CATALINA_HOME PATH
 ```
 
