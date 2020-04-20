@@ -88,15 +88,15 @@ mysql -u root -p
 修改MySQL密码
 
 ```mysql
-alter USER 'root'@'localhost' IDENTIFIED BY 'Zhy1026+++';
+alter USER 'root'@'localhost' IDENTIFIED BY '密码';
 ```
 
 开启远程访问（适用于MySQL8.0以后版本）
 
 ```mysql
-CREATE USER 'root'@'%' IDENTIFIED BY 'Zhy1026+++'; 
+CREATE USER 'root'@'%' IDENTIFIED BY '密码'; 
 GRANT ALL ON *.* TO 'root'@'%'; 
-ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'Zhy1026+++';
+ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '密码';
 FLUSH PRIVILEGES;
 
 ```
